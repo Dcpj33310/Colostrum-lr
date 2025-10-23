@@ -155,6 +155,19 @@
             font-size: 14px;
             margin-top: 15px;
         }
+        .certification-img {
+            width: 100%;      /* mobile : prend toute la largeur du parent */
+            max-width: 600px; /* jamais plus de 600px */
+            height: auto;
+            display: block;
+            margin: 0 auto;   /* centre sur grand écran */
+        }
+
+        @media (min-width: 992px) {
+            .certification-img {
+            width: auto;    /* desktop : taille naturelle jusqu'à 600px max */
+        }
+}
     </style>
 </head>
 <body>
@@ -313,7 +326,7 @@
 
             <!-- PHOTO -->
             <div class="text-center mt-4">
-                <img src="certification.png" alt="Certification" class="img-fluid" style="width: 100%; max-width: 600px; height: auto; border-radius: 10px; display: block; margin: 0 auto;"">
+                <img src="certification.png" alt="Certification" class="certification-img">
             </div>
         </div>
     </section>
@@ -449,4 +462,5 @@
 </body>
 
 </html>
+
 
